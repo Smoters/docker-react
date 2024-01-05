@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Smoters/docker-react -f Dockerfile.dev .
+  - docker build -t smoters/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true  Smoters/docker-react npm run test
+  - docker run -e CI=true  smoters/docker-react npm run test
